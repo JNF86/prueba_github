@@ -25,5 +25,13 @@ namespace prueba_ejecicio_con_GitHub
             txtResultado.Text = suma.ToString();
 
         }
+
+        private void btnRestar_Click(object sender, EventArgs e)
+        {
+            int resta = 0;
+            resta = Convert.ToInt32(txtnum1.Text) + Convert.ToInt32(txtnum2.Text);
+
+            txtResultado.Text = resta.ToString();
+        }
     }
 }

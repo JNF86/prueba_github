@@ -33,6 +33,9 @@
             this.txtnum1 = new System.Windows.Forms.TextBox();
             this.txtnum2 = new System.Windows.Forms.TextBox();
             this.txtResultado = new System.Windows.Forms.TextBox();
+            this.lblNum1 = new System.Windows.Forms.Label();
+            this.lblResultado = new System.Windows.Forms.Label();
+            this.lblNum2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnSumar
@@ -41,7 +44,7 @@
             this.btnSumar.Name = "btnSumar";
             this.btnSumar.Size = new System.Drawing.Size(108, 47);
             this.btnSumar.TabIndex = 0;
-            this.btnSumar.Text = "button1";
+            this.btnSumar.Text = "SUMA";
             this.btnSumar.UseVisualStyleBackColor = true;
             this.btnSumar.Click += new System.EventHandler(this.btnSumar_Click);
             // 
@@ -51,8 +54,9 @@
             this.btnRestar.Name = "btnRestar";
             this.btnRestar.Size = new System.Drawing.Size(108, 47);
             this.btnRestar.TabIndex = 1;
-            this.btnRestar.Text = "button2";
+            this.btnRestar.Text = "RESTA";
             this.btnRestar.UseVisualStyleBackColor = true;
+            this.btnRestar.Click += new System.EventHandler(this.btnRestar_Click);
             // 
             // txtnum1
             // 
@@ -75,11 +79,41 @@
             this.txtResultado.Size = new System.Drawing.Size(100, 26);
             this.txtResultado.TabIndex = 4;
             // 
+            // lblNum1
+            // 
+            this.lblNum1.AutoSize = true;
+            this.lblNum1.Location = new System.Drawing.Point(151, 118);
+            this.lblNum1.Name = "lblNum1";
+            this.lblNum1.Size = new System.Drawing.Size(78, 20);
+            this.lblNum1.TabIndex = 5;
+            this.lblNum1.Text = "Numero 1";
+            // 
+            // lblResultado
+            // 
+            this.lblResultado.AutoSize = true;
+            this.lblResultado.Location = new System.Drawing.Point(151, 273);
+            this.lblResultado.Name = "lblResultado";
+            this.lblResultado.Size = new System.Drawing.Size(90, 20);
+            this.lblResultado.TabIndex = 7;
+            this.lblResultado.Text = "Resultado: ";
+            // 
+            // lblNum2
+            // 
+            this.lblNum2.AutoSize = true;
+            this.lblNum2.Location = new System.Drawing.Point(151, 184);
+            this.lblNum2.Name = "lblNum2";
+            this.lblNum2.Size = new System.Drawing.Size(78, 20);
+            this.lblNum2.TabIndex = 8;
+            this.lblNum2.Text = "Numero 2";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblNum2);
+            this.Controls.Add(this.lblResultado);
+            this.Controls.Add(this.lblNum1);
             this.Controls.Add(this.txtResultado);
             this.Controls.Add(this.txtnum2);
             this.Controls.Add(this.txtnum1);
@@ -99,6 +133,9 @@
         private System.Windows.Forms.TextBox txtnum1;
         private System.Windows.Forms.TextBox txtnum2;
         private System.Windows.Forms.TextBox txtResultado;
+        private System.Windows.Forms.Label lblNum1;
+        private System.Windows.Forms.Label lblResultado;
+        private System.Windows.Forms.Label lblNum2;
     }
 }
 
