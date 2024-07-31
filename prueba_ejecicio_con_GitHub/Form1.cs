@@ -16,5 +16,14 @@ namespace prueba_ejecicio_con_GitHub
         {
             InitializeComponent();
         }
+
+        private void btnSumar_Click(object sender, EventArgs e)
+        {
+            int suma=0;
+            suma = Convert.ToInt32(txtnum1.Text) + Convert.ToInt32(txtnum2.Text);
+
+            txtResultado.Text = suma.ToString();
+
+        }
     }
 }
